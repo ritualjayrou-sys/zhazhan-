@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Letter For You</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="page">
+
+    <div class="decorations">
+
+        <span class="flower">🌸</span>
+
+        <button
+            class="moon"
+            id="darkModeButton"
+            aria-label="Toggle dark mode"
+        >
+            🌙
+        </button>
+
+        <span class="star">⭐</span>
+
+        <span class="cup">☕</span>
+
+        <span class="bow">🎀</span>
+
+        <span class="heart-decoration">💗</span>
+
+    </div>
+
+    <section
+        class="envelope-screen"
+        id="envelopeScreen"
+    >
+
+        <div class="envelope-wrapper">
+
+            <div
+                class="envelope"
+                id="envelope"
+            >
+
+                <div class="envelope-back"></div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+                <button
+                    class="seal"
+                    onclick="openLetter()"
+                    aria-label="Open letter"
+                >
+                    ♥
+                </button>
+
+            </div>
+
+            <p class="instruction">
+                Tap seal to open ♥
+            </p>
+
+        </div>
+
+    </section>
+
+    <section
+        class="letter-screen"
+        id="letterScreen"
+    >
+
+        <div class="letter-container">
+
+            <div class="letter-title">
+
+                <span>♥</span>
+
+                <h1>
+                    A letter for you...
+                </h1>
+
+            </div>
+
+            <article class="letter">
+
+                <h2>
+                    To my dearest Zhazhan,
+                </h2>
+
+                <div
+                    class="typing-wrapper"
+                    id="typingWrapper"
+                >
+
+                    <div id="typedText"></div>
+
+                    <span id="cursor">█</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<audio
+    id="bgMusic"
+    preload="auto"
+>
+    <source
+        src="aboutyou.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
